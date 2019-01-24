@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quant_label"
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/act_vert_margin"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/incr_btn"
+            android:text="+"
+            android:onClick="increment"/>
+        <TextView
+            android:id="@+id/quant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quant_default"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/decr_btn"
+            android:text="-"
+        android:onClick="decrement"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_label"
+        android:layout_marginTop="@dimen/act_vert_margin"
+        android:layout_marginBottom="@dimen/act_vert_margin"
+        android:textAllCaps="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_tv"
+        android:text="@string/price_default"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_txt"
+        android:onClick="submitOrder"
+        android:layout_marginTop="@dimen/act_vert_margin"
+        />
+        <!--android:textAllCaps="true" unnecessary for button-->
+
+</LinearLayout>
